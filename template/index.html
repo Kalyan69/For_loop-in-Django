@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my_template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <center>
+        {% for a, b in abc %}
+        <td class="border border-slate-600">{{ a }}</td>
+        <br>
+        <td class="border border-slate-600">{{ b }}</td>
+        <br>
+        {% endfor %}
+
+    </center>
+    <center>
+        <h1>{{xyz}}</h1>
+    </center>
+    <center>
+        {% for a in my_list %}
+        <h1>{{a}}</h1>
+        {% endfor %}
+    </center>
+
+</body>
+
+</html>
